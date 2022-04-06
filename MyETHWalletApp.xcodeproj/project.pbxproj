@@ -7,15 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2599DE77F83C22D0E74E0D2C /* Pods_MyETHWalletApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 533336874FF759153174767F /* Pods_MyETHWalletApp.framework */; };
 		A463966027FD396E005CA88C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463965F27FD396E005CA88C /* AppDelegate.swift */; };
 		A463966227FD396E005CA88C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463966127FD396E005CA88C /* SceneDelegate.swift */; };
 		A463966427FD396E005CA88C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463966327FD396E005CA88C /* ViewController.swift */; };
 		A463966727FD396E005CA88C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463966527FD396E005CA88C /* Main.storyboard */; };
 		A463966927FD3971005CA88C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A463966827FD3971005CA88C /* Assets.xcassets */; };
 		A463966C27FD3971005CA88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A463966A27FD3971005CA88C /* LaunchScreen.storyboard */; };
+		A463967427FD5B62005CA88C /* Web3Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463967327FD5B62005CA88C /* Web3Wallet.swift */; };
+		A463967627FD5CA2005CA88C /* Web3ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463967527FD5CA2005CA88C /* Web3ServiceError.swift */; };
+		A463967A27FD5F34005CA88C /* ExportedType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463967927FD5F34005CA88C /* ExportedType.swift */; };
+		A463967C27FD60FA005CA88C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463967B27FD60FA005CA88C /* SecondViewController.swift */; };
+		A463967E27FD6947005CA88C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463967D27FD6947005CA88C /* ThirdViewController.swift */; };
+		A463968027FD6988005CA88C /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463967F27FD6988005CA88C /* Wallet.swift */; };
+		A463968227FD699A005CA88C /* ERC20Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463968127FD699A005CA88C /* ERC20Token.swift */; };
+		A463968427FD7F13005CA88C /* BinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A463968327FD7F13005CA88C /* BinanceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CC61E6C7868F971F8753909 /* Pods-MyETHWalletApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyETHWalletApp.debug.xcconfig"; path = "Target Support Files/Pods-MyETHWalletApp/Pods-MyETHWalletApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4AAE2D6E45FA33B2B9548513 /* Pods-MyETHWalletApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyETHWalletApp.release.xcconfig"; path = "Target Support Files/Pods-MyETHWalletApp/Pods-MyETHWalletApp.release.xcconfig"; sourceTree = "<group>"; };
+		533336874FF759153174767F /* Pods_MyETHWalletApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyETHWalletApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A463965C27FD396E005CA88C /* MyETHWalletApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyETHWalletApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A463965F27FD396E005CA88C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A463966127FD396E005CA88C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +36,14 @@
 		A463966827FD3971005CA88C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A463966B27FD3971005CA88C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A463966D27FD3971005CA88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A463967327FD5B62005CA88C /* Web3Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3Wallet.swift; sourceTree = "<group>"; };
+		A463967527FD5CA2005CA88C /* Web3ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Web3ServiceError.swift; sourceTree = "<group>"; };
+		A463967927FD5F34005CA88C /* ExportedType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportedType.swift; sourceTree = "<group>"; };
+		A463967B27FD60FA005CA88C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		A463967D27FD6947005CA88C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		A463967F27FD6988005CA88C /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
+		A463968127FD699A005CA88C /* ERC20Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ERC20Token.swift; sourceTree = "<group>"; };
+		A463968327FD7F13005CA88C /* BinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinanceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2599DE77F83C22D0E74E0D2C /* Pods_MyETHWalletApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		644F014058F5171013CA1E27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3CC61E6C7868F971F8753909 /* Pods-MyETHWalletApp.debug.xcconfig */,
+				4AAE2D6E45FA33B2B9548513 /* Pods-MyETHWalletApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		792A13983498EB386603AFDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				533336874FF759153174767F /* Pods_MyETHWalletApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A463965327FD396E005CA88C = {
 			isa = PBXGroup;
 			children = (
 				A463965E27FD396E005CA88C /* MyETHWalletApp */,
 				A463965D27FD396E005CA88C /* Products */,
+				644F014058F5171013CA1E27 /* Pods */,
+				792A13983498EB386603AFDA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,13 +96,21 @@
 		A463965E27FD396E005CA88C /* MyETHWalletApp */ = {
 			isa = PBXGroup;
 			children = (
+				A463967327FD5B62005CA88C /* Web3Wallet.swift */,
 				A463965F27FD396E005CA88C /* AppDelegate.swift */,
 				A463966127FD396E005CA88C /* SceneDelegate.swift */,
 				A463966327FD396E005CA88C /* ViewController.swift */,
+				A463967B27FD60FA005CA88C /* SecondViewController.swift */,
+				A463967D27FD6947005CA88C /* ThirdViewController.swift */,
+				A463968327FD7F13005CA88C /* BinanceViewController.swift */,
 				A463966527FD396E005CA88C /* Main.storyboard */,
 				A463966827FD3971005CA88C /* Assets.xcassets */,
 				A463966A27FD3971005CA88C /* LaunchScreen.storyboard */,
 				A463966D27FD3971005CA88C /* Info.plist */,
+				A463967527FD5CA2005CA88C /* Web3ServiceError.swift */,
+				A463967927FD5F34005CA88C /* ExportedType.swift */,
+				A463967F27FD6988005CA88C /* Wallet.swift */,
+				A463968127FD699A005CA88C /* ERC20Token.swift */,
 			);
 			path = MyETHWalletApp;
 			sourceTree = "<group>";
@@ -74,9 +122,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A463967027FD3971005CA88C /* Build configuration list for PBXNativeTarget "MyETHWalletApp" */;
 			buildPhases = (
+				30A241694A3AAB81B2829CF7 /* [CP] Check Pods Manifest.lock */,
 				A463965827FD396E005CA88C /* Sources */,
 				A463965927FD396E005CA88C /* Frameworks */,
 				A463965A27FD396E005CA88C /* Resources */,
+				3E0F5D9B59D7EBA712384843 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,13 +183,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		30A241694A3AAB81B2829CF7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyETHWalletApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3E0F5D9B59D7EBA712384843 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyETHWalletApp/Pods-MyETHWalletApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MyETHWalletApp/Pods-MyETHWalletApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MyETHWalletApp/Pods-MyETHWalletApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A463965827FD396E005CA88C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A463967A27FD5F34005CA88C /* ExportedType.swift in Sources */,
 				A463966427FD396E005CA88C /* ViewController.swift in Sources */,
+				A463968227FD699A005CA88C /* ERC20Token.swift in Sources */,
+				A463967427FD5B62005CA88C /* Web3Wallet.swift in Sources */,
 				A463966027FD396E005CA88C /* AppDelegate.swift in Sources */,
+				A463967C27FD60FA005CA88C /* SecondViewController.swift in Sources */,
+				A463967627FD5CA2005CA88C /* Web3ServiceError.swift in Sources */,
+				A463968027FD6988005CA88C /* Wallet.swift in Sources */,
+				A463968427FD7F13005CA88C /* BinanceViewController.swift in Sources */,
+				A463967E27FD6947005CA88C /* ThirdViewController.swift in Sources */,
 				A463966227FD396E005CA88C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +382,7 @@
 		};
 		A463967127FD3971005CA88C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC61E6C7868F971F8753909 /* Pods-MyETHWalletApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +411,7 @@
 		};
 		A463967227FD3971005CA88C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4AAE2D6E45FA33B2B9548513 /* Pods-MyETHWalletApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

@@ -16,7 +16,8 @@ class ThirdViewController: UIViewController {
     
     var wallet:Wallet?
     var keystoreManager: KeystoreManager?
-    let web3 = Web3.InfuraRopstenWeb3() // Ropsten Infura Endpoint Provider
+//    var web3 = Web3.InfuraRopstenWeb3() // Ropsten Infura Endpoint Provider
+//    var web3:Web3?
     var token:ERC20Token?
     
     override func viewDidLoad() {
@@ -67,12 +68,15 @@ class ThirdViewController: UIViewController {
     
     
     @IBAction func getBallance(_ sender: Any) {
-//        let endpoint = "https://data-seed-prebsc-1-s1.binance.org:8545/"
-//        let web3 = web3(provider: Web3HttpProvider(URL(string: endpoint)!)!)
+        let endpoint = "https://data-seed-prebsc-1-s1.binanrce.org:8545/"
+        let web3 = web3(provider: Web3HttpProvider(URL(string: endpoint)!)!)
+        
         //Ropstenとはテストネットワークのこと
         //Ropstenとは Ethereumの主要なテストネットの一つ。 JSON-RPCのサーバはinfura ( https://infura.io/ ) を使うことが一般的
-        let web3 = Web3.InfuraRopstenWeb3() // Ropsten Infura Endpoint Provider
+//        let web3 = Web3.InfuraRopstenWeb3() // Ropsten Infura Endpoint Provider
 
+        
+        
         //https://data-seed-prebsc-1-s1.binance.org:8545/
         let walletAddress = EthereumAddress(wallet!.address)! // Address which balance we want to know
         let balanceResult = try! web3.eth.getBalance(address: walletAddress)
@@ -84,33 +88,33 @@ class ThirdViewController: UIViewController {
     
     
     @IBAction func getETHBallance(_ sender: Any) {
-        let walletAddress = EthereumAddress(wallet!.address)! // Address which balance we want to know
-        let balanceResult = try! web3.eth.getBalance(address: walletAddress)
-        let balanceString = Web3.Utils.formatToEthereumUnits(balanceResult, toUnits: .eth, decimals: 3)!
-        print(balanceString)
+//        let walletAddress = EthereumAddress(wallet!.address)! // Address which balance we want to know
+//        let balanceResult = try! web3.eth.getBalance(address: walletAddress)
+//        let balanceString = Web3.Utils.formatToEthereumUnits(balanceResult, toUnits: .eth, decimals: 3)!
+//        print(balanceString)
 
     }
     
     @IBAction func getERC20Token(_ sender: Any) {
-        let walletAddress = EthereumAddress(wallet!.address)! // Your wallet address
-        let exploredAddress = EthereumAddress(wallet!.address)! // Address which balance we want to know. Here we used same wallet address
-        let erc20ContractAddress = EthereumAddress(token!.address)!
-        let contract = web3.contract(Web3.Utils.erc20ABI, at: erc20ContractAddress, abiVersion: 2)!
-        var options = TransactionOptions.defaultOptions
-        options.from = walletAddress
-        options.gasPrice = .automatic
-        options.gasLimit = .automatic
-        let method = "balanceOf"
-        let tx = contract.read(
-            method,
-            parameters: [exploredAddress] as [AnyObject],
-            extraData: Data(),
-            transactionOptions: options)!
-        let tokenBalance = try! tx.call()
-        let balanceBigUInt = tokenBalance["0"] as! BigUInt
-        print(balanceBigUInt)
-        let balanceString2 = Web3.Utils.formatToEthereumUnits(balanceBigUInt, toUnits: .eth, decimals: 3)!
-        print(balanceString2)
+//        let walletAddress = EthereumAddress(wallet!.address)! // Your wallet address
+//        let exploredAddress = EthereumAddress(wallet!.address)! // Address which balance we want to know. Here we used same wallet address
+//        let erc20ContractAddress = EthereumAddress(token!.address)!
+//        let contract = web3.contract(Web3.Utils.erc20ABI, at: erc20ContractAddress, abiVersion: 2)!
+//        var options = TransactionOptions.defaultOptions
+//        options.from = walletAddress
+//        options.gasPrice = .automatic
+//        options.gasLimit = .automatic
+//        let method = "balanceOf"
+//        let tx = contract.read(
+//            method,
+//            parameters: [exploredAddress] as [AnyObject],
+//            extraData: Data(),
+//            transactionOptions: options)!
+//        let tokenBalance = try! tx.call()
+//        let balanceBigUInt = tokenBalance["0"] as! BigUInt
+//        print(balanceBigUInt)
+//        let balanceString2 = Web3.Utils.formatToEthereumUnits(balanceBigUInt, toUnits: .eth, decimals: 3)!
+//        print(balanceString2)
     
     }
     

@@ -6,11 +6,9 @@
 //
 
 import UIKit
-import BinanceChain
 
 class BinanceViewController: UIViewController {
 
-    let binance = BinanceChain()
 
     override func viewDidLoad() {
         super.viewDidLoad()
